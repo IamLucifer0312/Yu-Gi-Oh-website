@@ -1,41 +1,150 @@
+@font-face {
+    font-family: Yugioh;
+    src: url(fonts/Yu-Gi-Oh!\ Matrix\ Regular\ Small\ Caps\ 1.ttf);
+
+}
+
 * {
-    margin: 3;
     padding: 0;
-    font-family: "Arial", "Helvetica", "sans-serif";
+    
     box-sizing: border-box;
 }
 
 .item_list {
-    background-image:url('link\ _background.jpg');
+    
+    background-image:url('images/link\ _background.jpg');
+    text-align: center;
+    
+}
+
+.item_list table {
+    gap: 3rem;
+    margin: 0 auto;
+}
+
+.item_list a {
+    text-decoration: none;
+    color: black;
 }
 
 .item_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 1rem;
+}
+
+.item_image a {
+    text-decoration: none;
+    color: black;
+}
+
+.item_list table {
     background-color: white;
+    width: 70rem;
 }
 
 .item_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding-top: 1rem;
 }
 
-.nav {
-    background-color: #f7b3a8;
-    width: 43rem;
-    position: relative;
-    overflow: hidden;
-    border: 0.1rem solid black;
-    padding: 0.25rem;
-}
-.nav a{
-    padding: 2rem 0.8rem;
- }
 
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Yugioh";
+    font-size: x-large;
+}
+
+.nav .logo {
+    display: flex;
+    box-sizing: border-box;
+    margin-left: 2rem;
+}
+
+.nav img {
+    width: 10rem;
+    height: 10rem;
+}
+
+
+.nav .menu {
+    display: flex;
+    margin-left: auto;
+    margin-right: 4rem;
+    justify-content: center;
+}
+
+.nav .menu li ul a{
+    text-decoration: none;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap:0;
+    border-radius: 1rem;
+    border: solid  black;
+    background-color: black;
+}
+
+.nav li{
+    min-width: 70px;
+    text-align: center;
+    display: inline-block;
+}
+
+.nav a {
+    color: white;
+    padding-top: 0.725rem;
+    padding-bottom: 0.725rem;
+    width: 9rem;
+}
+
+.nav a:hover {
+    color: black;
+    background-color: white;
+}
+
+.item_list a:hover {
+    color: blue;
+}
+
+.item_image a:hover {
+    color: blue;
+}
 
 .item_details {
     padding: 2rem;
+    background-color: antiquewhite;
+    height: 45rem;
 }
 
 .product_image {
     padding-left: 15rem;
     padding-right: 2.5rem;
 }
+
+.footer table {
+    display: flex;
+    align-items: center;
+    font-family: "Yugioh";
+    font-size: x-large;
+    background-image: url(images/link\ _background.jpg);
+    padding-top: 1rem;
+}
+
+.left {
+    padding-left: 10rem;
+    padding-right: 17rem;
+}
+
+.footer li {
+    list-style: none;
+}
+
